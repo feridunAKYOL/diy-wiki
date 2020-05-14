@@ -32,7 +32,10 @@ function jsonError(res, message) {
 }
 
 // If you want to see the wiki client, run npm install && npm build in the client folder,
-// statically serve /client/build
+// then comment the line above and uncomment out the lines below and comment the line above.
+//  app.get('*', (req, res) => {
+//    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+//  });
 
 // GET: '/api/page/:slug'
 // success response: {status: 'ok', body: '<file contents>'}
@@ -64,5 +67,5 @@ app.get('/api/page/all', async (req, res) => {
   jsonOK(res, { });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`Wiki app is serving at http://localhost:${port}`));
