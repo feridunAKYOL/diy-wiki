@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Uncomment this out once you've made your first route.
-// app.use(express.static(path.join(__dirname, 'client', 'build')));
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // some helper functions you can use
 const readFile = util.promisify(fs.readFile);
@@ -64,7 +64,7 @@ function jsonError(res, message) {
 app.get('/api/page/all', async (req, res) => {
   const names = await fs.readdir(DATA_DIR);
   console.log(names);
-  jsonOK(res, { });
+  jsonOK(res, {});
 });
 
 const port = process.env.PORT || 8000;
