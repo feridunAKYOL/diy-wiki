@@ -99,12 +99,7 @@ app.get('/api/tags/all', async (req, res) => {
 		const FILE_PATH = path.join(DATA_DIR, file);
 		const content = await readFile(FILE_PATH, 'utf-8');
 		const tag = content.match(TAG_RE);
-
-		if (tags.includes(tag)) {
-			break;
-		} else {
-			tags = tags.concat(tag);
-		}
+		tags = tags.concat(tag);
 	}
 	const list = [];
 	tags.forEach((el) => {
