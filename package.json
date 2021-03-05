@@ -2,8 +2,10 @@
   "name": "wiki-server",
   "version": "1.0.0",
   "scripts": {
+    "install": "cd client && npm install && cd .. && npm install",
     "dev": "nodemon server.js",
-    "start": "cd client && npm install && npm run build && cd .. && npm install && node server.js",
+    "build": "cd client && npm run build && cd ..",
+    "start": "node server.js",
     "demo": "node demo.min.js",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   },
