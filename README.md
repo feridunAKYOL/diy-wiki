@@ -111,8 +111,6 @@ When you're done developing or studying you will want to close the server. If yo
 
 What you need to do to complete this assignment is write the 5 routes described in the `./wiki-server/server.js' file. You'll know your work is finished when you can use every button, link, and page in your frontend!
 
-We recommend always keeping the live demo open as you develop to be sure you keep the final product in mind. You can find the link in a pinned message on your class' Slack channel.
-
 ### Get an Existing Page
 
 Calling this route should return a response with a property called `body` containing the text stored inside the file with the name `:slug`
@@ -202,15 +200,3 @@ Node.js is a JavaScript runtime environment capable of writing Web Servers and A
 - [FCC: Node.js & Express](https://www.youtube.com/watch?v=G8uL0lFFoN0)
 
 [TOP](#do-it-yourself-wiki)
-
----
-
-## Contributors
-
-[TOP](#do-it-yourself-wiki)
-
----
-
----
-
-### <a href="https://hackyourfuture.be" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/63941625-4c7c3d00-ca6c-11e9-9a76-8d5e3632fe70.jpg" width="100" height="100"></a>
